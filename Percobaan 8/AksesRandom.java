@@ -4,7 +4,7 @@ public class AksesRandom {
     public static void main(String[] args) throws IOException {
         RandomAccessFile berkas = null;
         berkas = new RandomAccessFile("abc.dat", "rw");
-        berkas.writeBytes("ABCDEFGHIJKLMNOPQRSTUVW");
+        berkas.writeBytes("pens");
         char kar = ' ';
  
         berkas.seek(0);
@@ -16,8 +16,8 @@ public class AksesRandom {
  
         System.out.println();
  
-        berkas.seek(3);
-        berkas.writeByte((int)'Z');
+        berkas.seek(8);
+        berkas.writeByte((int)'P');
  
         System.out.println("Sesudah penggantian");
  
